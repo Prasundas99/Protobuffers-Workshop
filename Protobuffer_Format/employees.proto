@@ -1,0 +1,27 @@
+//Proto file needs to have a version no. as it has evolves a lot over time and to avoid deprecation issues
+
+syntax = "proto3";
+
+//This is the package name of the proto file or Employee Defination
+// a protofile stores everything as a message
+// It is language independent
+message Employee {
+    int32 id = 1;
+    string name = 2;
+    int32 age = 3;
+    float salary = 4;
+    string position = 5;
+}
+
+/*
+* repeated is used to store multiple values in a single field ~ Array
+* 
+*/
+message Employees {
+    repeated Employee employees = 1;
+}
+
+
+/*
+* ProtoC
+*/
